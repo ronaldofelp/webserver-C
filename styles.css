@@ -1,0 +1,89 @@
+/* Reset básico e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz o padding e border serem incluídos no tamanho total */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6; /* Cor de fundo suave */
+    color: #333; /* Cor de texto padrão */
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
+    padding: 20px; /* Espaçamento nas bordas para telas pequenas */
+}
+
+/* Estilização da seção principal (hero) */
+.hero {
+    background-color: #ffffff; /* Fundo branco para o card */
+    padding: 40px 30px; /* Espaçamento interno (vertical, horizontal) */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza todo o texto dentro da seção */
+    max-width: 600px; /* Largura máxima do conteúdo */
+    width: 100%; /* Ocupa a largura disponível até o máximo */
+}
+
+/* Estilização do Título Principal */
+.hero h1 {
+    color: #2c3e50; /* Cor mais escura para o título */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    font-size: 2.2rem; /* Tamanho da fonte maior */
+}
+
+/* Estilização dos parágrafos */
+.hero .content p {
+    color: #555; /* Cor de texto ligeiramente mais clara para parágrafos */
+    margin-bottom: 10px; /* Espaço abaixo de cada parágrafo */
+    font-size: 1.1rem; /* Tamanho da fonte para leitura */
+}
+
+/* Estilização da seção do botão */
+.cta-section {
+    margin-top: 30px; /* Espaço acima do botão */
+}
+
+/* Estilização do botão Call-to-Action */
+.cta-button {
+    background-color: #3498db; /* Cor de fundo azul */
+    color: #ffffff; /* Cor do texto branca */
+    border: none; /* Remove a borda padrão */
+    padding: 12px 25px; /* Espaçamento interno (vertical, horizontal) */
+    font-size: 1rem; /* Tamanho da fonte do botão */
+    font-weight: bold;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar clicabilidade */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para hover */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.cta-button:hover {
+    background-color: #2980b9; /* Azul um pouco mais escuro */
+    transform: translateY(-2px); /* Leve elevação */
+}
+
+/* Ajustes para telas menores (Responsividade) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero .content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
